@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/barra de navegacion.css">
+    <!-- <link rel="stylesheet" href="../estilos/tarjetas.css"> -->
+    <link rel="stylesheet" href="../estilos/carrito.css">
+    <!-- <link rel="stylesheet" href="../estilos/cinta de productos.css">
+    <link rel="stylesheet" href="../estilos/productos.css"> -->
+    <script defer src="../scripts/menu.js"></script>
+    <script defer src="../scripts/carrito.js"></script>
+    <style>
+        .producto {
+            background-color: rgb(158, 172, 189);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navegacion">
+        <div class="presentacion" id="hero">
+            <a href="index.html">
+                <img src="../src/logotipo.png" alt="logotipo">
+            </a>
+            <h1>PC PARADISE</h1>
+        </div>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="conocenos.html">¿Quiénes somos?</a>
+            <a href="contacto.html">Contacto</a>
+
+            <div class="navegacion-complementaria">
+                <a href="carrito.html">🛒</a>
+                <a href="iniciarSesion.html">🙍‍♂️</a>
+                <button id="hamburguesa">☰</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="cuerpo-catalogo post-navbar">
+        <div id="carrito">
+            <div id="lista-carrito"></div>
+            <div class="total">
+                <p>Descuento: <span id="descuento">0%</span></p>
+                <p>Subtotal: $<span id="total-antes-descuento">0</span></p>
+                <p>Total: $<span id="total-precio">0</span></p>
+                <button class="finalizar-compra">FINALIZAR</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="elemento-footer">
+            <img src="../src/logotipo.png" alt="logotipo">
+        </div>
+        <div class="elemento-footer">
+            <a href="https://www.instagram.com/">IG</a>
+            <a href="https://www.facebook.com/">FB</a>
+            <a href="https://twitter.com/?lang=es">X</a>
+        </div>
+        <p>Gracias por usar PC PARADISE <b>"potencia sin limites"</b></p>
+        <p>PC PARADISE 2024, todos los derechos reservado</p>
+    </footer>
+</body>
+
+</html>

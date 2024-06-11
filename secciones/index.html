@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Paradise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/barra de navegacion.css">
+    <link rel="stylesheet" href="../estilos/tarjetas.css">
+    <link rel="stylesheet" href="../estilos/cinta de productos.css">
+    <link rel="stylesheet" href="../estilos/productos.css">
+    <link rel="stylesheet" href="../estilos/slider.css">
+    <link rel="stylesheet" href="../estilos/otros-productos.css">
+    
+    <script defer src="../scripts/dirigirAlProductos.js"></script>
+    <script defer src="../scripts/menu.js"></script>
+    <script defer src="../scripts/otros-productos.js"></script>
+</head>
+
+<body>
+    <div class="navegacion">
+        <div class="presentacion" id="hero">
+            <a href="index.html">
+                <img src="../src/logotipo.png" alt="logotipo">
+            </a>
+            <h1>PC PARADISE</h1>
+        </div>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="conocenos.html">¿Quiénes somos?</a>
+            <a href="contacto.html">Contacto</a>
+            <div class="navegacion-complementaria">
+                <a href="carrito.html">🛒</a>
+                <a href="iniciarSesion.html">🙍‍♂️</a>
+                <button id="hamburguesa">☰</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="caja-index post-navbar">
+
+        <h2>PROMOCIÓN</h2>
+
+        <div class=" slider-box">
+            <div class="lista-slider">
+
+                <div class="producto promociones elemento-slide" id="producto-promocion1">
+                    <div class="imagen">
+                        <img src="../src/promocion/promocion1.jpg" class="imagen-promocion">
+                    </div>                   
+                    <h3>Procesador Intel Core i7-10700K</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>8 núcleos</li>
+                        <li>16 hilos</li>
+                        <li>frecuencia máxima 5.1GHz</li>
+                    </ul>
+                    <div class="precio">
+                        <p>Antes: $5409.00</p>
+                        <b>AHORA: $4599.00</b>
+                    </div>
+                </div>
+
+                <div class="producto promociones elemento-slide" id="producto-promocion2">
+                    <div class="imagen">
+                        <img src="../src/promocion/promocion2.jpg" class="imagen-promocion">
+                    </div>
+                    <h3>Tarjeta Gráfica NVIDIA GeForce RTX 3070</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>8GB GDDR6</li>
+                        <li>5888 núcleos CUDA</li>
+                        <li>tecnología de trazado de rayos</li>
+                    </ul>
+                    <div class="precio">
+                        <p>Antes: $6300.00</p>
+                        <b>AHORA: $5499.00</b>
+                    </div>
+                </div>
+
+                <div class="producto promociones elemento-slide" id="producto-promocion3">
+                    <div class="imagen">
+                        <img src="../src/promocion/promocion3.jpg" class="imagen-promocion">
+                    </div>
+                    <h3>Memoria RAM Corsair Vengeance RGB Pro 16GB (2 x 8GB) DDR4 3200MHz</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Iluminación RGB</li>
+                        <li>latencia de 16-18-18-36</li>
+                        <li>disipador de calor</li>
+                    </ul>
+                    <div class="precio">
+                        <p>Antes: $2021.99</p>
+                        <b>AHORA: $1399.00</b>
+                    </div>
+                </div>
+
+                <div class="producto promociones elemento-slide" id="producto-promocion4">
+                    <div class="imagen">
+                        <img src="../src/promocion/promocion4.jpg" class="imagen-promocion">
+                    </div>
+                    <h3>Placa Base ASUS ROG Strix B550-F Gaming (Wi-Fi 6)</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Soporte para Ryzen 3000 y 5000</li>
+                        <li>PCIe 4.0</li>
+                        <li>Wi-Fi 6</li>
+                    </ul>
+                    <div class="precio">
+                        <p>Antes: $3489.00</p>
+                        <b>AHORA: $2599.00</b>
+                    </div>
+                </div>
+
+                <div class="producto promociones elemento-slide" id="producto-promocion5">
+                    <div class="imagen">
+                        <img src="../src/promocion/promocion5.jpg" class="imagen-promocion">
+                    </div>
+                    <h3>Unidad de Estado Sólido (SSD) Samsung 970 EVO Plus 1TB</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>NVMe</li>
+                        <li>velocidad de lectura de hasta 3,500 MB/s</li>
+                        <li>velocidad de escritura de hasta 3,300 MB/s</li>
+                    </ul>
+                    <div class="precio">
+                        <p >Antes: $3040.00</p>
+                        <b>AHORA: $1499.00</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="otros">
+        <button class="boton-otros" style="margin-left: 50px;">&lt;</button>
+
+        <div class="productos-contenedor">
+            
+            <div class="otros-productos" id="">
+                <div class="imagen">
+                    <img src="../src/laptops/laptops1.jpg" >
+                </div>
+                <h3>Laptop Gaming ASUS ROG Zephyrus G14</h3>
+                <h4>Características</h4>
+                <ul>
+                    <li>AMD Ryzen 9 5900HS</li>
+                    <li>NVIDIA RTX 3060</li>
+                    <li>pantalla QHD 144Hz</li>
+                </ul>
+                <p><b>Precio: </b>$38,950.00</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                        <div class="imagen">
+                            <img src="../src/laptops/laptops2.jpg" >
+                        </div>
+                        <h3>Laptop Dell XPS 13</h3>  
+                        <h4>Características</h4>
+                        <ul>
+                            <li>Intel Core i7-1165G7</li>
+                            <li>pantalla táctil InfinityEdge 4K</li>
+                            <li>16GB RAM</li>
+                        </ul>
+                        <p><b>Precio: </b>$38,499.00</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                        <div class="imagen">
+                            <img src="../src/laptops/laptops3.jpg" >
+                        </div>
+                        <h3>Laptop HP Envy x360 Convertible</h3>  
+                        <h4>Características</h4>
+                        <ul>
+                            <li>AMD Ryzen 7 5700U</li>
+                            <li>pantalla táctil Full HD IPS</li>
+                            <li>512GB SSD</li>
+                        </ul>
+                        <p><b>Precio: </b>$24,999.00</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                        <div class="imagen">
+                            <img src="../src/laptops/laptops4.jpg" >
+                        </div>
+                        <h3>Laptop Lenovo Legion 5</h3>  
+                        <h4>Características</h4>
+                        <ul>
+                            <li>AMD Ryzen 5 5600H</li>
+                            <li>NVIDIA GTX 1660 Ti</li>
+                            <li>pantalla 120Hz</li>
+                        </ul>
+                        <p><b>Precio: </b>$31,395.00</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                <div class="imagen">
+                    <img src="../src/almacenamiento/almacenamiento1.jpg" >
+                </div>
+                <h3>Disco Duro Externo Seagate Expansion 4TB</h3>
+                <h4>Características</h4>
+                <ul>
+                    <li>Almacenamiento masivo</li>
+                    <li>conexión USB 3.0</li>
+                    <li>fácil de usar</li>
+                </ul>
+                <p><b>Precio: </b>$1,937.15</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                <div class="imagen">
+                    <img src="../src/almacenamiento/almacenamiento2.jpg" >
+                </div>
+                <h3>Tarjeta de Memoria SanDisk Extreme Pro 256GB microSDXC</h3>  
+                <h4>Características</h4>
+                <ul>
+                    <li>Velocidad de lectura: 170MB/s</li>
+                    <li>clasificación A2</li>
+                    <li>resistencia al agua y temperatura</li>
+                </ul>
+                <p><b>Precio: </b>$529.99</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                <div class="imagen">
+                    <img src="../src/almacenamiento/almacenamiento3.jpg" >
+                </div>
+                <h3>Unidad Flash Kingston DataTraveler 64GB USB 3.0</h3>  
+                <h4>Características</h4>
+                <ul>
+                    <li>Diseño compacto</li>
+                    <li>velocidad de transferencia rápida</li>
+                </ul>
+                <p><b>Precio: </b>$129.00</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                <div class="imagen">
+                    <img src="../src/componentes PC/componente1.jpg" >
+                </div>
+                <h3>Fuente de Poder EVGA SuperNOVA 750 G5, 80 Plus Gold</h3>
+                <h4>Características</h4>
+                <ul>
+                    <li>Eficiencia energética Gold</li>
+                    <li>ventilador de rodamiento dinámico</li>
+                </ul>
+                <p><b>Precio: </b>$2,229.00</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                <div class="imagen">
+                    <img src="../src/componentes PC/componente2.jpg" >
+                </div>
+                <h3>Disipador de CPU Noctua NH-D15</h3>  
+                <h4>Características</h4>
+                <ul>
+                    <li>Doble torre</li>
+                    <li>dos ventiladores NF-A15</li>
+                    <li>excelente rendimiento térmico</li>
+                </ul>
+                <p><b>Precio: </b>$2,999.00</p>
+            </div>
+
+            <div class="otros-productos" id="">
+                <div class="imagen">
+                    <img src="../src/componentes PC/componente3.jpg" >
+                </div>
+                <h3>Tarjeta Madre MSI MAG B450 TOMAHAWK MAX</h3>  
+                <h4>Características</h4>
+                <ul>
+                    <li>Soporte para Ryzen 3000</li>
+                    <li>USB 3.2 Gen2</li>
+                    <li>DDR4 Boost</li>
+                </ul>
+                <p><b>Precio: </b>$3,029.00</p>
+            </div>
+
+        </div>
+
+        <button class="boton-otros" style="margin-right: 50px;">&gt;</button>
+    </div>
+
+    <hr />
+    <footer>
+        <div class="elemento-footer">
+            <img src="../src/logotipo.png" alt="logotipo">
+        </div>
+        <div class="elemento-footer">
+            <a href="https://www.instagram.com/">IG</a>
+            <a href="https://www.facebook.com/">FB</a>
+            <a href="https://twitter.com/?lang=es">X</a>
+        </div>
+        <p>Gracias por usar PC PARADISE <b>"potencia sin limites"</b></p>
+        <p>PC PARADISE 2024, todos los derechos reservado</p>
+    </footer>
+</body>
+</html>

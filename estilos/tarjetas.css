@@ -1,0 +1,61 @@
+.producto {
+    width: 500px;
+    height:90%;
+    border-radius: 15px;
+    background-color: rgb(118, 134, 154);
+    padding: 2%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.imagen {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.imagen  img {
+    width: 30%;
+    height: 30%;
+    transition: transform 0.3s ease, border-radius 0.3s ease, border-color 0.3s ease; /* Añade una transición suave */
+    cursor: pointer;
+}
+
+.imagen img:hover {
+    border-radius: 15px; /* Borde redondeado */
+    border: 2px solid rgb(104, 102, 110); /* Borde de color gris */
+    transform: scale(1.3); /* Agranda la imagen */
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.precio p {
+    text-decoration: line-through;
+}
+.precio b {
+    color: red;
+}
+
+.box-boton-carrito {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acciones-carrito {
+    color: white;
+    background-color: rgb(32, 15, 44);
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+.acciones-carrito:hover {
+    opacity: 0.7;
+}

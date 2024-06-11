@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/barra de navegacion.css">
+    <style>
+        .formulario {
+            height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .campo-formulario {
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: center;
+        }
+        button {
+            height: 50px;
+            border-radius: 12px;
+            border: none;
+            background-color: black;
+            color: white;
+            transition: transform 0.3s ease, opacity 0.3s ease; 
+        }
+        button:hover {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+    </style>
+    <script defer src="../scripts/iniciarSesion.js"></script>
+    <script defer src="../scripts/menu.js"></script>
+</head>
+<body>
+    <div class="navegacion">
+        <div class="presentacion" id="hero">
+            <a href="index.html">
+                <img src="../src/logotipo.png" alt="logotipo">
+            </a>
+            <h1>PC PARADISE</h1>
+        </div>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="conocenos.html">¿Quiénes somos?</a>
+            <a href="contacto.html">Contacto</a>
+
+            <div class="navegacion-complementaria">
+                <a href="carrito.html">🛒</a>
+                <a href="iniciarSesion.html">🙍‍♂️</a>
+                <button id="hamburguesa">☰</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="formulario post-navbar">
+        <form>
+            <div class="campo-formulario">
+                <label for="nombre-usuario">Nombre:</label>
+                <input type="text" id="nombre-usuario" placeholder="Tu nombre">
+            </div>
+            <div class="campo-formulario">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" placeholder="UserName">
+            </div>
+            <div class="campo-formulario">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="Tu e-mail">
+            </div>
+            <div class="campo-formulario">
+                <button id="guardar">Guardar</button>
+            </div>
+        </form>
+    </div>
+
+    <hr/>
+    <footer>
+        <div class="elemento-footer">
+            <img src="../src/logotipo.png" alt="logotipo">
+        </div>
+        <div class="elemento-footer">
+            <a href="https://www.instagram.com/">IG</a>
+            <a href="https://www.facebook.com/">FB</a>
+            <a href="https://twitter.com/?lang=es">X</a>
+        </div>
+        <p>Gracias por usar PC PARADISE <b>"potencia sin limites"</b></p>
+        <p>PC PARADISE 2024, todos los derechos reservado</p>
+    </footer>
+</body>
+</html>

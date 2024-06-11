@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/barra de navegacion.css">
+    <link rel="stylesheet" href="../estilos/cinta de productos.css">
+    <link rel="stylesheet" href="../estilos/tarjetas.css">
+    <link rel="stylesheet" href="../estilos/slider.css">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .post-navbar{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #mostrar-producto {
+            width:50%;
+            height: auto;
+            background: rgb(186, 190, 195);
+            margin-top: 8%;
+            margin-bottom: 8%;
+            padding: 2%;
+            border-radius: 10px;
+        }
+        #cajita {
+            margin-bottom: 5%;
+        }
+    </style>
+    <script defer src="../scripts/dirigirAlProductos.js"></script>
+    <script defer src="../scripts/mostrarProducto.js"></script>
+    <script defer src="../scripts/menu.js"></script>
+    <title>informacion producto</title>
+</head>
+<body>
+    <div class="navegacion">
+        <div class="presentacion" id="hero">
+            <a href="index.html">
+                <img src="../src/logotipo.png" alt="logotipo">
+            </a>
+            <h1>PC PARADISE</h1>
+        </div>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="conocenos.html">¿Quiénes somos?</a>
+            <a href="contacto.html">Contacto</a>
+            <div class="navegacion-complementaria">
+                <a href="carrito.html">🛒</a>
+                <a href="iniciarSesion.html">🙍‍♂️</a>
+                <button id="hamburguesa">☰</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="post-navbar">
+        <div id="mostrar-producto">
+            <div class="box-extras">
+                <div class="box-boton-carrito">
+                    <button class="acciones-carrito" id="agregar-carrito">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <footer>
+        <div class="elemento-footer">
+            <img src="../src/logotipo.png" alt="logotipo">
+        </div>
+        <div class="elemento-footer">
+            <a href="https://www.instagram.com/">IG</a>
+            <a href="https://www.facebook.com/">FB</a>
+            <a href="https://twitter.com/?lang=es">X</a>
+        </div>
+        <p>Gracias por usar PC PARADISE <b>"potencia sin limites"</b></p>
+        <p>PC PARADISE 2024, todos los derechos reservado</p>
+    </footer>
+</body>
+</html>
